@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ProjetoCompiladorMilkes</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_resultado">ResultadoActivity</string>
+</resources>
