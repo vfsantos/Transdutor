@@ -57,17 +57,31 @@
     <TextView
         android:id="@+id/lb_codigo"
         android:layout_width="0dp"
-        android:layout_height="245dp"
+        android:layout_height="187dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="254dp"
         android:text=""
         android:textColor="@color/colorWhite"
-        app:layout_constraintBottom_toTopOf="@+id/btn-limpar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt-area"
-        app:layout_constraintVertical_bias="0.036" />
+        app:layout_constraintTop_toBottomOf="@+id/txt-area" />
+
+    <Button
+        android:id="@+id/btn_mostrar_compilador"
+        android:layout_width="354dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/botao_customizado_limpar"
+        android:text="Mais de detalhes"
+        android:onClick="onClickMaisDetalhes"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toTopOf="@+id/btn-compilar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lb_codigo" />
 </android.support.constraint.ConstraintLayout>

@@ -14,7 +14,6 @@ import java.util.ArrayList;
 
 public class ResultadoActivity extends AppCompatActivity {
 
-    TextView lbCodigo;
     Button btnVoltar;
     Intent intentVoltar;
 
@@ -25,12 +24,10 @@ public class ResultadoActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        lbCodigo = (TextView) findViewById(R.id.lbCodigo);
         btnVoltar = (Button) findViewById(R.id.btnVoltar);
 
         Intent intent = getIntent();
         String codigo = (String) intent.getSerializableExtra(MainActivity.CODIGO);
-        lbCodigo.setText(codigo);
 
     }
 
